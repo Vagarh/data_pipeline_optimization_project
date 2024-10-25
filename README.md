@@ -2,25 +2,27 @@
 
 Este repositorio contiene un pipeline de procesamiento de datos optimizado, diseñado para la gestión y análisis de datos de un sistema de alquiler de películas. El proyecto se desarrolla en cuatro fases, cada una implementando tecnologías y metodologías distintas para mejorar el rendimiento, escalabilidad y organización del proceso de datos.
 
-# Estructura del pipeline
+## Estructura del pipeline
 
-## Fase 1: Programación Lineal
+### Fase 1: Programación Lineal
 Limpieza inicial y unificación de datos en una estructura lineal utilizando Pandas para asegurar la consistencia del conjunto de datos.
 
-## Fase 2: Programación Orientada a Objetos (POO)
+### Fase 2: Programación Orientada a Objetos (POO)
 Reestructuración del código en clases y métodos, encapsulando la lógica de limpieza, combinación y almacenamiento en un modelo orientado a objetos.
 
-## Fase 3: Adaptación a Apache Spark
+### Fase 3: Adaptación a Apache Spark
 Migración del código a PySpark para el procesamiento distribuido, aumentando la eficiencia en grandes volúmenes de datos.
 
-## Fase 4: Arquitectura en AWS
+### Fase 4: Arquitectura en AWS
 Implementación de una arquitectura híbrida serverless en AWS, utilizando AWS DataSync, Glue, Athena, y SageMaker para orquestar y visualizar el flujo de datos.
-Objetivo del proyecto
+
+## Objetivo del proyecto
 
 El objetivo es crear un pipeline escalable, modular y fácilmente adaptable que permita responder preguntas de negocio clave, como tendencias de rentas, rentabilidad de películas y comportamiento de clientes. El proyecto utiliza Looker Studio y Python para visualización y análisis avanzado de los datos procesados.
 
-# Estructura del Repositorio
+## Estructura del Repositorio
 
+```plaintext
 project_name/
 │
 ├── README.md                     # Descripción general del proyecto
@@ -63,3 +65,4 @@ project_name/
     ├── test_poo_processing.py    # Pruebas para el procesamiento POO (fase 2)
     ├── test_spark_processing.py  # Pruebas para el procesamiento en Spark (fase 3)
     └── test_aws_architecture.py  # Pruebas para los scripts en AWS (fase 4)
+
